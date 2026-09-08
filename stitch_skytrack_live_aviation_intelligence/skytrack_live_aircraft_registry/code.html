@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#7bd0ff", "inverse-primary": "#00668a", "outline-variant": "#3e484f", "secondary": "#4cd7f6", "surface-bright": "#303a49", "primary": "#8ed5ff", "background": "#0a1422", "on-secondary-fixed": "#001f26", "primary-container": "#38bdf8", "surface-container": "#16202f", "on-secondary-fixed-variant": "#004e5c", "on-tertiary-fixed": "#002109", "on-error-container": "#ffdad6", "on-error": "#690005", "on-primary": "#00354a", "on-tertiary-fixed-variant": "#005321", "surface-dim": "#0a1422", "on-tertiary-container": "#004f20", "surface-variant": "#2c3545", "tertiary": "#52e87c", "inverse-surface": "#d9e3f7", "on-primary-fixed-variant": "#004c69", "outline": "#87929a", "on-surface": "#d9e3f7", "surface": "#0a1422", "error": "#ffb4ab", "surface-container-highest": "#2c3545", "inverse-on-surface": "#273140", "tertiary-fixed": "#6bff8f", "on-tertiary": "#003915", "on-surface-variant": "#bdc8d1", "primary-fixed": "#c4e7ff", "on-background": "#d9e3f7", "surface-tint": "#7bd0ff", "on-primary-fixed": "#001e2c", "secondary-fixed": "#acedff", "on-secondary-container": "#00424e", "tertiary-fixed-dim": "#4ae176", "surface-container-lowest": "#050e1c", "on-primary-container": "#004965", "secondary-fixed-dim": "#4cd7f6", "error-container": "#93000a", "surface-container-low": "#121c2a", "surface-container-high": "#212a39", "secondary-container": "#03b5d3", "on-secondary": "#003640", "tertiary-container": "#2ccb63" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "panel-padding-standard": "16px", "space-sm": "8px", "space-md": "12px", "space-2xl": "24px", "space-xxs": "2px", "gutter-desktop": "16px", "space-xs": "4px", "space-xl": "20px", "space-3xl": "32px", "panel-padding-compact": "10px", "space-lg": "16px", "gutter-mobile": "8px" }, fontFamily: { "headline-lg-mobile": ["Space Grotesk"], "body-sm": ["Inter"], "metric-label": ["JetBrains Mono"], "telemetry-data": ["JetBrains Mono"], "code-pill": ["JetBrains Mono"], "headline-md": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "metric-display": ["JetBrains Mono"], "headline-xl": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "body-md": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "headline-lg-mobile": ["20px", { lineHeight: "26px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "metric-label": ["13px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "500" }], "telemetry-data": ["11px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "400" }], "code-pill": ["10px", { lineHeight: "12px", letterSpacing: "0.08em", fontWeight: "600" }], "headline-md": ["18px", { lineHeight: "24px", fontWeight: "600" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }], "metric-display": ["28px", { lineHeight: "32px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-xl-mobile": ["26px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background:#0a1422;color:#d9e3f7;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="h-28 px-panel-padding-standard flex flex-col justify-between py-space-sm"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SKYTRACK Aviation Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V3R909wjZbY4h4Ez9GyeGwFo_s9Vuy4Z00_jUDx2t2faSYv4JTj4jE3LpQ6gpA21VXUjPc1YACakxQW0S1LivQCSQ63yHBrE2yN9d1n3x07F0otaLOTYTuk0Yn7AJqYeUIMljqaT-W5f_nASXWpwI434FPlQffDWxR-NgeOlIetRYCJ75r2uPKrD7vtgWgXYEjSK7zRGxmsKxmCII9MErIu4mrgkLvT_u7hGj1EMQbuIbL3wUR7qP8I6Ue"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md tracking-tight uppercase text-primary truncate">SKYTRACK</span><span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-highest text-secondary uppercase">TAC-OPS</span></div><span class="font-telemetry-data text-telemetry-data text-on-surface-variant truncate">Flight Registry</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-high/80 backdrop-blur-md"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-code-pill text-code-pill text-tertiary uppercase">LIVE</span><span class="font-telemetry-data text-telemetry-data text-on-surface-variant hidden xs:inline">21:58:32 UTC</span></div><button class="w-11 h-11 rounded bg-surface-container-high flex items-center justify-center text-primary hover:bg-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center gap-space-xs"><div class="relative flex-1 flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-full pl-8 pr-3 py-space-xs rounded bg-surface-container-low text-on-surface font-telemetry-data text-telemetry-data placeholder:text-outline focus:outline-none focus:bg-surface-container" placeholder="Search aircraft, callsign, ICAO24..." type="text"/></div><div class="flex items-center gap-space-xxs"><button class="px-space-xs py-space-xxs rounded bg-primary text-on-primary font-code-pill text-code-pill">WORLD</button><button class="px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-code-pill text-code-pill hover:text-on-surface">ASIA</button><button class="px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-code-pill text-code-pill hover:text-on-surface">EUR</button><button class="px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-code-pill text-code-pill hover:text-on-surface">NA</button></div></div></div></header><main class="flex flex-col relative w-full pt-28 pb-20 bg-surface flex-1"><div class="flex flex-col w-full px-space-sm space-y-space-sm pb-space-2xl">
+<!-- Overview Tactical Ribbon -->
+<div class="flex flex-col bg-surface-container-low rounded-lg p-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight uppercase">LIVE AIRSPACE REGISTRY</span>
+<span class="inline-flex items-center px-space-xs py-space-xxs rounded bg-secondary-container/20 text-secondary font-code-pill text-code-pill uppercase font-semibold">GLOBAL-NET</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span>
+</span>
+<span class="font-code-pill text-code-pill text-tertiary uppercase">8,421 SYNC</span>
+</div>
+</div>
+<p class="font-telemetry-data text-telemetry-data text-on-surface-variant mt-space-xxs">
+      Real-time telemetry of 8,421 active aircraft in monitored sectors
+    </p>
+<!-- Airspace Telemetry Sparkline -->
+<div class="mt-space-sm flex items-center justify-between pt-space-xs bg-surface-container-lowest/60 rounded p-space-xs">
+<div class="flex flex-col">
+<span class="font-code-pill text-code-pill text-outline uppercase">TRANSPONDER DENSITY</span>
+<span class="font-metric-label text-metric-label text-primary font-bold">142.8 msg/sec</span>
+</div>
+<div class="w-28 h-6 flex items-end">
+<svg class="w-full h-full text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0,18 L10,14 L20,19 L30,8 L40,11 L50,4 L60,16 L70,9 L80,13 L90,6 L100,10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+<path d="M0,18 L10,14 L20,19 L30,8 L40,11 L50,4 L60,16 L70,9 L80,13 L90,6 L100,10 L100,24 L0,24 Z" fill="currentColor" fill-opacity="0.15"></path>
+</svg>
+</div>
+<div class="flex items-center gap-space-xxs bg-tertiary-container/20 text-tertiary px-space-xs py-space-xxs rounded">
+<span class="material-symbols-outlined text-[14px]">satellite_alt</span>
+<span class="font-code-pill text-code-pill">99.98%</span>
+</div>
+</div>
+</div>
+<!-- Segmented State Filter & Mode Selector -->
+<div class="flex flex-col space-y-space-xs">
+<div class="grid grid-cols-3 bg-surface-container-lowest p-space-xxs rounded-lg shadow-sm">
+<button class="flex items-center justify-center gap-space-xs py-space-xs rounded bg-surface-container-high text-primary shadow-sm transition-all" id="tab-airborne">
+<span class="material-symbols-outlined text-[16px]">flight_takeoff</span>
+<span class="font-code-pill text-code-pill font-bold">AIRBORNE (7,981)</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs py-space-xs rounded text-on-surface-variant hover:text-on-surface transition-all" id="tab-ground">
+<span class="material-symbols-outlined text-[16px]">flight_land</span>
+<span class="font-code-pill text-code-pill">GROUND (440)</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs py-space-xs rounded text-on-surface-variant hover:text-on-surface transition-all" id="tab-watched">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="font-code-pill text-code-pill">WATCHED (14)</span>
+</button>
+</div>
+<!-- Filter Pills Scroller -->
+<div class="flex items-center gap-space-xs overflow-x-auto py-space-xxs no-scrollbar">
+<button class="flex items-center gap-space-xxs px-space-sm py-space-xxs rounded bg-surface-container-high text-primary font-code-pill text-code-pill flex-shrink-0">
+<span>STATUS: ALL</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<button class="flex items-center gap-space-xxs px-space-sm py-space-xxs rounded bg-primary-container text-on-primary-container font-code-pill text-code-pill font-semibold flex-shrink-0 shadow-sm">
+<span>ALT: &gt;30,000 FT</span>
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+<button class="flex items-center gap-space-xxs px-space-sm py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-code-pill text-code-pill flex-shrink-0">
+<span>REGION: GLOBAL</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<button class="flex items-center gap-space-xxs px-space-sm py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-code-pill text-code-pill flex-shrink-0">
+<span>CARRIER: ALL</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<button class="flex items-center gap-space-xxs px-space-xs py-space-xxs rounded bg-surface-container-highest text-secondary font-code-pill text-code-pill flex-shrink-0">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>MORE</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Cards Feed -->
+<div class="flex flex-col space-y-space-sm">
+<!-- Card 1: Highlighted Flight (AIC123) -->
+<div class="flex flex-col bg-surface-container rounded-lg p-space-md shadow-xl relative overflow-hidden">
+<!-- Glow Accent Line -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="flex items-start justify-between min-w-0 pl-space-xs">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">AIC123</span>
+<span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-highest text-on-surface font-semibold">AIR INDIA</span>
+<span class="text-[13px]">🇮🇳</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xxs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">ICAO: 800123</span>
+<span class="font-code-pill text-code-pill text-outline">•</span>
+<span class="font-telemetry-data text-telemetry-data text-secondary font-medium">B777-200LR</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<div class="flex items-center gap-space-xxs px-space-xs py-space-xxs rounded bg-tertiary-container/30 text-tertiary font-code-pill text-code-pill font-bold">
+<span class="relative flex h-1.5 w-1.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-tertiary"></span>
+</span>
+<span>AIRBORNE</span>
+</div>
+<span class="font-code-pill text-code-pill text-outline mt-space-xxs">3s ago</span>
+</div>
+</div>
+<!-- Route Trajectory Graphic -->
+<div class="mt-space-sm pl-space-xs bg-surface-container-lowest/80 rounded p-space-sm flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-metric-label text-metric-label font-bold text-on-surface">DEL</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant">Delhi, IND</span>
+</div>
+<div class="flex-1 flex flex-col items-center px-space-sm">
+<div class="flex items-center w-full justify-between font-code-pill text-code-pill text-primary mb-space-xxs">
+<span>EET 04:12</span>
+<span class="text-tertiary font-bold">CRUISING</span>
+<span>REM 03:40</span>
+</div>
+<div class="relative w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden flex items-center">
+<div class="h-full bg-gradient-to-r from-primary via-secondary to-primary-container rounded-full w-[54%]"></div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-metric-label text-metric-label font-bold text-on-surface">LHR</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant">London, GBR</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Gauges Matrix -->
+<div class="grid grid-cols-4 gap-space-xs mt-space-sm pl-space-xs">
+<div class="flex flex-col bg-surface-container-low p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">ALT</span>
+<span class="font-metric-label text-metric-label text-primary font-bold">34,000<span class="text-[9px] font-normal text-on-surface-variant">ft</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-low p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">SPD</span>
+<span class="font-metric-label text-metric-label text-on-surface font-bold">451<span class="text-[9px] font-normal text-on-surface-variant">kt</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-low p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">HDG</span>
+<div class="flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[13px] text-secondary" style="transform: rotate(82deg);">navigation</span>
+<span class="font-metric-label text-metric-label text-on-surface font-bold">082°</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-low p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">V/S</span>
+<span class="font-metric-label text-metric-label text-tertiary font-bold">+500<span class="text-[9px] font-normal text-on-surface-variant">fpm</span></span>
+</div>
+</div>
+<!-- Quick Tactical Actions -->
+<div class="flex items-center gap-space-sm mt-space-md pl-space-xs">
+<button class="flex-1 flex items-center justify-center gap-space-xs py-space-xs rounded bg-primary text-on-primary font-code-pill text-code-pill font-bold active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[16px]">radar</span>
+<span>RADAR VIEW</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-space-xs py-space-xs rounded bg-surface-container-high text-primary hover:text-on-surface font-code-pill text-code-pill font-bold active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[16px]">location_searching</span>
+<span>TRACK FLIGHT</span>
+</button>
+<button class="w-8 h-8 rounded bg-surface-container-high text-on-surface-variant flex items-center justify-center hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+</button>
+</div>
+</div>
+<!-- Card 2: UAE201 -->
+<div class="flex flex-col bg-surface-container-low rounded-lg p-space-md shadow-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div>
+<div class="flex items-start justify-between min-w-0 pl-space-xs">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">UAE201</span>
+<span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-highest text-on-surface font-semibold">EMIRATES</span>
+<span class="text-[13px]">🇦🇪</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xxs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">ICAO: 896XYZ</span>
+<span class="font-code-pill text-code-pill text-outline">•</span>
+<span class="font-telemetry-data text-telemetry-data text-secondary">B777-300ER</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<div class="flex items-center gap-space-xxs px-space-xs py-space-xxs rounded bg-tertiary-container/20 text-tertiary font-code-pill text-code-pill font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+<span>AIRBORNE</span>
+</div>
+<span class="font-code-pill text-code-pill text-outline mt-space-xxs">5s ago</span>
+</div>
+</div>
+<!-- Sector Route -->
+<div class="flex items-center justify-between mt-space-xs pl-space-xs py-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="font-metric-label text-metric-label font-bold text-primary">DXB</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="font-metric-label text-metric-label font-bold text-on-surface">JFK</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant ml-space-xs">North Atlantic Corridor</span>
+</div>
+</div>
+<!-- Telemetry Strip -->
+<div class="grid grid-cols-4 gap-space-xs mt-space-xs pl-space-xs">
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">ALT</span>
+<span class="font-metric-label text-metric-label text-primary font-semibold">37,000<span class="text-[9px] font-normal text-on-surface-variant">ft</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">SPD</span>
+<span class="font-metric-label text-metric-label text-on-surface font-semibold">470<span class="text-[9px] font-normal text-on-surface-variant">kt</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">HDG</span>
+<div class="flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[13px] text-secondary" style="transform: rotate(112deg);">navigation</span>
+<span class="font-metric-label text-metric-label text-on-surface font-semibold">112°</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">V/S</span>
+<span class="font-metric-label text-metric-label text-tertiary font-semibold">+100<span class="text-[9px] font-normal text-on-surface-variant">fpm</span></span>
+</div>
+</div>
+<!-- Compact Action Strip -->
+<div class="flex items-center justify-end gap-space-xs mt-space-sm pl-space-xs">
+<button class="px-space-sm py-space-xxs rounded bg-surface-container-high text-primary hover:text-on-surface font-code-pill text-code-pill">
+          RADAR VIEW
+        </button>
+<button class="px-space-sm py-space-xxs rounded bg-surface-container-high text-secondary hover:text-on-surface font-code-pill text-code-pill">
+          TRACK FLIGHT
+        </button>
+</div>
+</div>
+<!-- Card 3: BAW45 (Descending) -->
+<div class="flex flex-col bg-surface-container-low rounded-lg p-space-md shadow-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-surface-variant"></div>
+<div class="flex items-start justify-between min-w-0 pl-space-xs">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">BAW45</span>
+<span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-highest text-on-surface font-semibold">BRITISH AIRWAYS</span>
+<span class="text-[13px]">🇬🇧</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xxs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">ICAO: 400A12</span>
+<span class="font-code-pill text-code-pill text-outline">•</span>
+<span class="font-telemetry-data text-telemetry-data text-secondary">A350-1000</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<div class="flex items-center gap-space-xxs px-space-xs py-space-xxs rounded bg-tertiary-container/20 text-tertiary font-code-pill text-code-pill font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+<span>AIRBORNE</span>
+</div>
+<span class="font-code-pill text-code-pill text-outline mt-space-xxs">8s ago</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-xs pl-space-xs py-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="font-metric-label text-metric-label font-bold text-primary">LHR</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="font-metric-label text-metric-label font-bold text-on-surface">SIN</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant ml-space-xs">Bengal Transit</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-space-xs mt-space-xs pl-space-xs">
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">ALT</span>
+<span class="font-metric-label text-metric-label text-primary font-semibold">31,000<span class="text-[9px] font-normal text-on-surface-variant">ft</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">SPD</span>
+<span class="font-metric-label text-metric-label text-on-surface font-semibold">420<span class="text-[9px] font-normal text-on-surface-variant">kt</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">HDG</span>
+<div class="flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[13px] text-secondary" style="transform: rotate(270deg);">navigation</span>
+<span class="font-metric-label text-metric-label text-on-surface font-semibold">270°</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">V/S</span>
+<span class="font-metric-label text-metric-label text-error font-semibold">-200<span class="text-[9px] font-normal text-on-surface-variant">fpm</span></span>
+</div>
+</div>
+</div>
+<!-- Card 4: DLH401 (Lufthansa) -->
+<div class="flex flex-col bg-surface-container-low rounded-lg p-space-md shadow-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-surface-variant"></div>
+<div class="flex items-start justify-between min-w-0 pl-space-xs">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">DLH401</span>
+<span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-highest text-on-surface font-semibold">LUFTHANSA</span>
+<span class="text-[13px]">🇩🇪</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xxs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">ICAO: 3C4B21</span>
+<span class="font-code-pill text-code-pill text-outline">•</span>
+<span class="font-telemetry-data text-telemetry-data text-secondary">B747-8</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<div class="flex items-center gap-space-xxs px-space-xs py-space-xxs rounded bg-tertiary-container/20 text-tertiary font-code-pill text-code-pill font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+<span>AIRBORNE</span>
+</div>
+<span class="font-code-pill text-code-pill text-outline mt-space-xxs">12s ago</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-xs pl-space-xs py-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="font-metric-label text-metric-label font-bold text-primary">FRA</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="font-metric-label text-metric-label font-bold text-on-surface">HND</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant ml-space-xs">Trans-Siberian Alternate</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-space-xs mt-space-xs pl-space-xs">
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">ALT</span>
+<span class="font-metric-label text-metric-label text-primary font-semibold">36,000<span class="text-[9px] font-normal text-on-surface-variant">ft</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">SPD</span>
+<span class="font-metric-label text-metric-label text-on-surface font-semibold">455<span class="text-[9px] font-normal text-on-surface-variant">kt</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">HDG</span>
+<div class="flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[13px] text-secondary" style="transform: rotate(90deg);">navigation</span>
+<span class="font-metric-label text-metric-label text-on-surface font-semibold">090°</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">V/S</span>
+<span class="font-metric-label text-metric-label text-on-surface-variant font-semibold">0<span class="text-[9px] font-normal text-on-surface-variant">fpm</span></span>
+</div>
+</div>
+</div>
+<!-- Card 5: QFA12 (Qantas) -->
+<div class="flex flex-col bg-surface-container-low rounded-lg p-space-md shadow-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-surface-variant"></div>
+<div class="flex items-start justify-between min-w-0 pl-space-xs">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">QFA12</span>
+<span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-highest text-on-surface font-semibold">QANTAS</span>
+<span class="text-[13px]">🇦🇺</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xxs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">ICAO: 7C14D3</span>
+<span class="font-code-pill text-code-pill text-outline">•</span>
+<span class="font-telemetry-data text-telemetry-data text-secondary">B787-9</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<div class="flex items-center gap-space-xxs px-space-xs py-space-xxs rounded bg-tertiary-container/20 text-tertiary font-code-pill text-code-pill font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+<span>AIRBORNE</span>
+</div>
+<span class="font-code-pill text-code-pill text-outline mt-space-xxs">15s ago</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-xs pl-space-xs py-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="font-metric-label text-metric-label font-bold text-primary">SYD</span>
+<span class="material-symbols-outlined text-[14px] text-outline">arrow_forward</span>
+<span class="font-metric-label text-metric-label font-bold text-on-surface">LAX</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant ml-space-xs">Pacific Oceanic Sector</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-space-xs mt-space-xs pl-space-xs">
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">ALT</span>
+<span class="font-metric-label text-metric-label text-primary font-semibold">39,000<span class="text-[9px] font-normal text-on-surface-variant">ft</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">SPD</span>
+<span class="font-metric-label text-metric-label text-on-surface font-semibold">480<span class="text-[9px] font-normal text-on-surface-variant">kt</span></span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">HDG</span>
+<div class="flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[13px] text-secondary" style="transform: rotate(145deg);">navigation</span>
+<span class="font-metric-label text-metric-label text-on-surface font-semibold">145°</span>
+</div>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-space-xs rounded">
+<span class="font-code-pill text-code-pill text-outline uppercase">V/S</span>
+<span class="font-metric-label text-metric-label text-tertiary font-semibold">+150<span class="text-[9px] font-normal text-on-surface-variant">fpm</span></span>
+</div>
+</div>
+</div>
+<!-- Card 6: Ground Taxiing (AF276) -->
+<div class="flex flex-col bg-surface-container-low rounded-lg p-space-md shadow-md relative overflow-hidden">
+<!-- Amber/Warning Glow Strip for Ground State -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-surface-bright"></div>
+<div class="flex items-start justify-between min-w-0 pl-space-xs">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">AF276</span>
+<span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-highest text-on-surface font-semibold">AIR FRANCE</span>
+<span class="text-[13px]">🇫🇷</span>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xxs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">ICAO: 39AC42</span>
+<span class="font-code-pill text-code-pill text-outline">•</span>
+<span class="font-telemetry-data text-telemetry-data text-secondary">A321-200</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<div class="flex items-center gap-space-xxs px-space-xs py-space-xxs rounded bg-surface-variant text-on-surface font-code-pill text-code-pill font-bold">
+<span class="h-1.5 w-1.5 rounded-full bg-surface-bright"></span>
+<span>ON GROUND</span>
+</div>
+<span class="font-code-pill text-code-pill text-outline mt-space-xxs">2s ago</span>
+</div>
+</div>
+<!-- Ground Coordinates/Taxiway Info -->
+<div class="mt-space-sm pl-space-xs flex items-center justify-between bg-surface-container-lowest p-space-xs rounded">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-surface-bright">local_taxi</span>
+<span class="font-metric-label text-metric-label text-on-surface font-semibold">CDG Taxiway B4</span>
+<span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface-variant">GATE K31</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-pill text-code-pill text-outline uppercase">GND SPD</span>
+<span class="font-metric-label text-metric-label text-primary font-bold">18<span class="text-[9px] font-normal text-on-surface-variant">kt</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Realtime Stream Footer & Pagination Ribbon -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg p-space-sm space-y-space-xs mt-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-telemetry-data text-telemetry-data">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-tertiary animate-spin" style="animation-duration: 3s;">sync</span>
+<span>Showing <strong class="text-on-surface">6</strong> of <strong class="text-on-surface">8,421</strong> aircraft</span>
+</div>
+<div class="flex items-center gap-space-xxs">
+<span class="font-code-pill text-code-pill text-outline">CYCLE:</span>
+<span class="font-code-pill text-code-pill text-primary font-bold">5s</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xxs">
+<span class="font-code-pill text-code-pill text-outline flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[13px] text-secondary">hub</span>
+        OpenSky Network Relay Active
+      </span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface font-code-pill text-code-pill disabled:opacity-50">
+          PREV
+        </button>
+<span class="font-code-pill text-code-pill text-primary">PAGE 1 / 1404</span>
+<button class="px-space-xs py-space-xxs rounded bg-surface-container-high text-primary hover:text-on-surface font-code-pill text-code-pill">
+          NEXT
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Quick micro-interaction for Segmented Buttons
+    const tabs = ['tab-airborne', 'tab-ground', 'tab-watched'];
+    tabs.forEach(tabId => {
+      const el = document.getElementById(tabId);
+      if (!el) return;
+      el.addEventListener('click', () => {
+        tabs.forEach(id => {
+          const btn = document.getElementById(id);
+          if (btn) {
+            btn.classList.remove('bg-surface-container-high', 'text-primary', 'shadow-sm', 'font-bold');
+            btn.classList.add('text-on-surface-variant');
+          }
+        });
+        el.classList.add('bg-surface-container-high', 'text-primary', 'shadow-sm', 'font-bold');
+        el.classList.remove('text-on-surface-variant');
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary bg-surface-container/60"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xxs min-w-[64px] h-12 rounded text-on-surface-variant hover:text-on-surface transition-all" data-path="map-tracker" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-code-pill text-code-pill">MAP</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xxs min-w-[64px] h-12 rounded transition-all text-primary bg-surface-container/60" data-path="flight-registry" href="#"><span class="material-symbols-outlined text-[22px]">flight_takeoff</span><span class="font-code-pill text-code-pill">FLIGHTS</span></a><a class="flex flex-col items-center justify-center gap-space-xxs min-w-[64px] h-12 rounded text-on-surface-variant hover:text-on-surface transition-all" data-path="fleet-analytics" href="#"><span class="material-symbols-outlined text-[22px]">analytics</span><span class="font-code-pill text-code-pill">STATS</span></a><a class="flex flex-col items-center justify-center gap-space-xxs min-w-[64px] h-12 rounded text-on-surface-variant hover:text-on-surface transition-all" data-path="tactical-alerts" href="#"><span class="material-symbols-outlined text-[22px]">notifications_active</span><span class="font-code-pill text-code-pill">ALERTS</span></a></div></nav></body></html>

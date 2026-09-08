@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed-dim": "#7bd0ff", "inverse-primary": "#00668a", "outline-variant": "#3e484f", "secondary": "#4cd7f6", "surface-bright": "#303a49", "primary": "#8ed5ff", "background": "#0a1422", "on-secondary-fixed": "#001f26", "primary-container": "#38bdf8", "surface-container": "#16202f", "on-secondary-fixed-variant": "#004e5c", "on-tertiary-fixed": "#002109", "on-error-container": "#ffdad6", "on-error": "#690005", "on-primary": "#00354a", "on-tertiary-fixed-variant": "#005321", "surface-dim": "#0a1422", "on-tertiary-container": "#004f20", "surface-variant": "#2c3545", "tertiary": "#52e87c", "inverse-surface": "#d9e3f7", "on-primary-fixed-variant": "#004c69", "outline": "#87929a", "on-surface": "#d9e3f7", "surface": "#0a1422", "error": "#ffb4ab", "surface-container-highest": "#2c3545", "inverse-on-surface": "#273140", "tertiary-fixed": "#6bff8f", "on-tertiary": "#003915", "on-surface-variant": "#bdc8d1", "primary-fixed": "#c4e7ff", "on-background": "#d9e3f7", "surface-tint": "#7bd0ff", "on-primary-fixed": "#001e2c", "secondary-fixed": "#acedff", "on-secondary-container": "#00424e", "tertiary-fixed-dim": "#4ae176", "surface-container-lowest": "#050e1c", "on-primary-container": "#004965", "secondary-fixed-dim": "#4cd7f6", "error-container": "#93000a", "surface-container-low": "#121c2a", "surface-container-high": "#212a39", "secondary-container": "#03b5d3", "on-secondary": "#003640", "tertiary-container": "#2ccb63" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "panel-padding-standard": "16px", "space-sm": "8px", "space-md": "12px", "space-2xl": "24px", "space-xxs": "2px", "gutter-desktop": "16px", "space-xs": "4px", "space-xl": "20px", "space-3xl": "32px", "panel-padding-compact": "10px", "space-lg": "16px", "gutter-mobile": "8px" }, fontFamily: { "headline-lg-mobile": ["Space Grotesk"], "body-sm": ["Inter"], "metric-label": ["JetBrains Mono"], "telemetry-data": ["JetBrains Mono"], "code-pill": ["JetBrains Mono"], "headline-md": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "metric-display": ["JetBrains Mono"], "headline-xl": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "body-md": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "headline-lg-mobile": ["20px", { lineHeight: "26px", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "metric-label": ["13px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "500" }], "telemetry-data": ["11px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "400" }], "code-pill": ["10px", { lineHeight: "12px", letterSpacing: "0.08em", fontWeight: "600" }], "headline-md": ["18px", { lineHeight: "24px", fontWeight: "600" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }], "metric-display": ["28px", { lineHeight: "32px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-xl-mobile": ["26px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background:#0a1422;color:#d9e3f7;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="h-28 px-panel-padding-standard flex flex-col justify-between py-space-sm"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="SKYTRACK Aviation Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V3R909wjZbY4h4Ez9GyeGwFo_s9Vuy4Z00_jUDx2t2faSYv4JTj4jE3LpQ6gpA21VXUjPc1YACakxQW0S1LivQCSQ63yHBrE2yN9d1n3x07F0otaLOTYTuk0Yn7AJqYeUIMljqaT-W5f_nASXWpwI434FPlQffDWxR-NgeOlIetRYCJ75r2uPKrD7vtgWgXYEjSK7zRGxmsKxmCII9MErIu4mrgkLvT_u7hGj1EMQbuIbL3wUR7qP8I6Ue"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md tracking-tight uppercase text-primary truncate">SKYTRACK</span><span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-highest text-secondary uppercase">TAC-OPS</span></div><span class="font-telemetry-data text-telemetry-data text-on-surface-variant truncate">Fleet Analytics</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-high/80 backdrop-blur-md"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-code-pill text-code-pill text-tertiary uppercase">LIVE</span><span class="font-telemetry-data text-telemetry-data text-on-surface-variant hidden xs:inline">21:58:32 UTC</span></div><button class="w-11 h-11 rounded bg-surface-container-high flex items-center justify-center text-primary hover:bg-surface-variant transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center gap-space-xs"><div class="relative flex-1 flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-full pl-8 pr-3 py-space-xs rounded bg-surface-container-low text-on-surface font-telemetry-data text-telemetry-data placeholder:text-outline focus:outline-none focus:bg-surface-container" placeholder="Search aircraft, callsign, ICAO24..." type="text"/></div><div class="flex items-center gap-space-xxs"><button class="px-space-xs py-space-xxs rounded bg-primary text-on-primary font-code-pill text-code-pill">WORLD</button><button class="px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-code-pill text-code-pill hover:text-on-surface">ASIA</button><button class="px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-code-pill text-code-pill hover:text-on-surface">EUR</button><button class="px-space-xs py-space-xxs rounded bg-surface-container-high text-on-surface-variant font-code-pill text-code-pill hover:text-on-surface">NA</button></div></div></div></header><main class="flex flex-col relative w-full pt-28 pb-20 bg-surface flex-1"><div class="flex flex-col w-full gap-space-lg px-panel-padding-standard py-space-md">
+<!-- Sub-Header & Window Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">query_stats</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight uppercase">AVIATION STATISTICS</h1>
+</div>
+<span class="font-code-pill text-code-pill px-space-xs py-space-xxs rounded bg-surface-container-high text-tertiary uppercase flex items-center gap-space-xxs">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+        STREAM SYNCED
+      </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global traffic patterns, altitude distribution, and fleet dynamics</p>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex items-center gap-space-xxs px-space-sm py-space-xs rounded bg-surface-container-high text-primary font-code-pill text-code-pill hover:bg-surface-variant transition-colors shadow-sm">
+<span>WORLD</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<button class="flex items-center gap-space-xxs px-space-sm py-space-xs rounded bg-surface-container-low text-on-surface-variant font-code-pill text-code-pill hover:text-on-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span>
+<span>24H WINDOW</span>
+</button>
+<div class="ml-auto font-telemetry-data text-telemetry-data text-outline">EPOCH #4829</div>
+</div>
+</div>
+<!-- Top Telemetry Summary Grid (2x3) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Card 1: Total Flights -->
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden group">
+<div class="absolute -right-3 -bottom-3 text-surface-container-highest opacity-30 pointer-events-none">
+<span class="material-symbols-outlined text-[54px]">travel_explore</span>
+</div>
+<span class="font-metric-label text-metric-label text-on-surface-variant uppercase">TOTAL FLIGHTS</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-metric-display text-metric-display text-primary">8,421</span>
+<span class="font-code-pill text-code-pill text-tertiary flex items-center font-medium">▲ 3.8%</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline mt-space-xxs">Across 22 FIR Sectors</span>
+</div>
+<!-- Card 2: Airborne -->
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden">
+<div class="absolute -right-3 -bottom-3 text-secondary opacity-15 pointer-events-none">
+<span class="material-symbols-outlined text-[54px]">flight_takeoff</span>
+</div>
+<span class="font-metric-label text-metric-label text-on-surface-variant uppercase">AIRBORNE</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-metric-display text-metric-display text-secondary">7,981</span>
+<span class="font-code-pill text-code-pill text-secondary">94.8%</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline mt-space-xxs">Transponder Active</span>
+</div>
+<!-- Card 3: On Ground -->
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden">
+<div class="absolute -right-3 -bottom-3 text-surface-container-highest opacity-30 pointer-events-none">
+<span class="material-symbols-outlined text-[54px]">flight_land</span>
+</div>
+<span class="font-metric-label text-metric-label text-on-surface-variant uppercase">ON GROUND</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-metric-display text-metric-display text-on-surface">440</span>
+<span class="font-code-pill text-code-pill text-outline">5.2%</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline mt-space-xxs">Taxi &amp; Apron Hold</span>
+</div>
+<!-- Card 4: Active Nations -->
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden">
+<div class="absolute -right-3 -bottom-3 text-tertiary opacity-15 pointer-events-none">
+<span class="material-symbols-outlined text-[54px]">public</span>
+</div>
+<span class="font-metric-label text-metric-label text-on-surface-variant uppercase">ACTIVE NATIONS</span>
+<div class="flex items-baseline gap-space-xs mt-space-xxs">
+<span class="font-metric-display text-metric-display text-tertiary">142</span>
+<span class="font-code-pill text-code-pill text-tertiary">ICAO</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline mt-space-xxs">Registered Flags</span>
+</div>
+<!-- Card 5: Avg Cruising Altitude -->
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden">
+<div class="absolute -right-3 -bottom-3 text-primary opacity-15 pointer-events-none">
+<span class="material-symbols-outlined text-[54px]">north_east</span>
+</div>
+<span class="font-metric-label text-metric-label text-on-surface-variant uppercase">AVG CRUISING ALT</span>
+<div class="flex items-baseline gap-space-xxs mt-space-xxs">
+<span class="font-metric-display text-metric-display text-primary">28,420</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant">FT</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline mt-space-xxs">FL284 Flight Level</span>
+</div>
+<!-- Card 6: Avg Ground Speed -->
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden">
+<div class="absolute -right-3 -bottom-3 text-secondary opacity-15 pointer-events-none">
+<span class="material-symbols-outlined text-[54px]">speed</span>
+</div>
+<span class="font-metric-label text-metric-label text-on-surface-variant uppercase">AVG GROUND SPEED</span>
+<div class="flex items-baseline gap-space-xxs mt-space-xxs">
+<span class="font-metric-display text-metric-display text-secondary">412</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant">KT</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline mt-space-xxs">Mach ~0.68 Median</span>
+</div>
+</div>
+<!-- Section 1: Aircraft Distribution by Country -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-md gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">flag</span>
+<span class="font-headline-md text-headline-md text-on-surface uppercase">AIRCRAFT BY COUNTRY</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline">TOP FLIGHT OPERATORS</span>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Row 1: United States -->
+<div class="flex flex-col gap-space-xxs">
+<div class="flex justify-between items-center text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-pill text-code-pill px-space-xxs py-0.5 rounded bg-surface-container text-primary uppercase">US</span>
+<span class="font-medium">United States</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">2,840 flts</span>
+<span class="font-code-pill text-code-pill text-primary font-bold">33.7%</span>
+</div>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded transition-all duration-700" style="width: 33.7%;"></div>
+</div>
+</div>
+<!-- Row 2: China / East Asia -->
+<div class="flex flex-col gap-space-xxs">
+<div class="flex justify-between items-center text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-pill text-code-pill px-space-xxs py-0.5 rounded bg-surface-container text-secondary uppercase">CN</span>
+<span class="font-medium">China / East Asia</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">1,420 flts</span>
+<span class="font-code-pill text-code-pill text-secondary font-bold">16.9%</span>
+</div>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded transition-all duration-700" style="width: 16.9%;"></div>
+</div>
+</div>
+<!-- Row 3: United Kingdom -->
+<div class="flex flex-col gap-space-xxs">
+<div class="flex justify-between items-center text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-pill text-code-pill px-space-xxs py-0.5 rounded bg-surface-container text-primary uppercase">GB</span>
+<span class="font-medium">United Kingdom</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">890 flts</span>
+<span class="font-code-pill text-code-pill text-primary font-bold">10.6%</span>
+</div>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded transition-all duration-700" style="width: 10.6%;"></div>
+</div>
+</div>
+<!-- Row 4: India -->
+<div class="flex flex-col gap-space-xxs">
+<div class="flex justify-between items-center text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-pill text-code-pill px-space-xxs py-0.5 rounded bg-surface-container text-secondary uppercase">IN</span>
+<span class="font-medium">India</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">760 flts</span>
+<span class="font-code-pill text-code-pill text-secondary font-bold">9.0%</span>
+</div>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim rounded transition-all duration-700" style="width: 9.0%;"></div>
+</div>
+</div>
+<!-- Row 5: Germany -->
+<div class="flex flex-col gap-space-xxs">
+<div class="flex justify-between items-center text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-pill text-code-pill px-space-xxs py-0.5 rounded bg-surface-container text-outline uppercase">DE</span>
+<span class="font-medium">Germany</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">580 flts</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant font-bold">6.9%</span>
+</div>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-outline rounded transition-all duration-700" style="width: 6.9%;"></div>
+</div>
+</div>
+<!-- Row 6: UAE -->
+<div class="flex flex-col gap-space-xxs">
+<div class="flex justify-between items-center text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-pill text-code-pill px-space-xxs py-0.5 rounded bg-surface-container text-tertiary uppercase">AE</span>
+<span class="font-medium">UAE</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">410 flts</span>
+<span class="font-code-pill text-code-pill text-tertiary font-bold">4.9%</span>
+</div>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded transition-all duration-700" style="width: 4.9%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Altitude Level Breakdown -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-md gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">vertical_align_top</span>
+<span class="font-headline-md text-headline-md text-on-surface uppercase">ALTITUDE DISTRIBUTION</span>
+</div>
+<span class="font-code-pill text-code-pill text-primary px-space-xs py-space-xxs rounded bg-surface-container">FLIGHT LEVELS</span>
+</div>
+<!-- Vertical Stratified Bar Display -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<!-- High Cruise -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">High Cruise</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant">FL350 - FL430</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-secondary font-semibold">4,120 AC (48.9%)</span>
+</div>
+<div class="w-full h-2.5 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded" style="width: 48.9%;"></div>
+</div>
+</div>
+<!-- Mid Cruise -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Mid Cruise</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant">FL250 - FL340</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-primary font-semibold">2,640 AC (31.3%)</span>
+</div>
+<div class="w-full h-2.5 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded" style="width: 31.3%;"></div>
+</div>
+</div>
+<!-- Low / Approach -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-tint"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Low / Approach</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant">FL100 - FL240</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant font-semibold">1,221 AC (14.5%)</span>
+</div>
+<div class="w-full h-2.5 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-surface-tint rounded" style="width: 14.5%;"></div>
+</div>
+</div>
+<!-- Terminal / Ground -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Terminal / Ground</span>
+<span class="font-code-pill text-code-pill text-on-surface-variant">&lt; FL100</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline font-semibold">440 AC (5.3%)</span>
+</div>
+<div class="w-full h-2.5 rounded bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-outline rounded" style="width: 5.3%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Airborne vs Ground Distribution Ring Graphic & Hourly Traffic -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-md gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">timelapse</span>
+<span class="font-headline-md text-headline-md text-on-surface uppercase">STATUS &amp; PEAK SURGE</span>
+</div>
+<span class="font-code-pill text-code-pill text-tertiary px-space-xs py-space-xxs rounded bg-surface-container">24H CYCLE</span>
+</div>
+<!-- Donut Ring + Stat Legend -->
+<div class="flex items-center justify-around gap-space-sm py-space-xs">
+<!-- SVG Donut Chart -->
+<div class="relative w-28 h-28 flex items-center justify-center flex-shrink-0">
+<svg class="w-28 h-28 transform -rotate-90" viewbox="0 0 100 100">
+<circle class="text-surface-container" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-width="10"></circle>
+<!-- Ground Slice: 5.2% (Circumference ~ 238.76 -> dasharray 12.4 226.3) -->
+<circle class="text-outline" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-dasharray="12.4 226.3" stroke-dashoffset="0" stroke-width="10"></circle>
+<!-- Airborne Slice: 94.8% (dasharray 226.3 12.4) -->
+<circle class="text-secondary" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-dasharray="226.3 12.4" stroke-dashoffset="-12.4" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-metric-display text-[20px] leading-tight text-secondary">95%</span>
+<span class="font-code-pill text-code-pill text-outline">AIR</span>
+</div>
+</div>
+<!-- Segment Details -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-metric-label text-metric-label text-on-surface">AIRBORNE SECTOR</span>
+</div>
+<span class="font-metric-display text-headline-md text-secondary pl-space-md">7,981 <span class="font-telemetry-data text-telemetry-data text-on-surface-variant font-normal">aircraft</span></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-metric-label text-metric-label text-on-surface">SURFACE APRON</span>
+</div>
+<span class="font-metric-display text-headline-md text-outline pl-space-md">440 <span class="font-telemetry-data text-telemetry-data text-outline font-normal">aircraft</span></span>
+</div>
+</div>
+</div>
+<!-- Peak Traffic Hours Line Graph (Inline SVG Sparkline with Highlights) -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-metric-label text-metric-label text-on-surface-variant">HOURLY AIRBORNE CONCURRENCY</span>
+<div class="flex items-center gap-space-xxs">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-code-pill text-code-pill text-tertiary">SURGE: 14:00 - 18:00 UTC</span>
+</div>
+</div>
+<div class="relative w-full h-24 bg-surface-container rounded-lg p-space-xs flex flex-col justify-end overflow-hidden">
+<!-- Background Grid Guides -->
+<div class="absolute inset-0 flex flex-col justify-between p-space-xs pointer-events-none opacity-20">
+<div class="w-full border-b border-outline"></div>
+<div class="w-full border-b border-outline"></div>
+<div class="w-full border-b border-outline"></div>
+</div>
+<!-- Surge Zone Overlay -->
+<div class="absolute top-0 bottom-0 left-[58%] w-[20%] bg-tertiary/10 border-x border-tertiary/30 pointer-events-none flex items-start justify-center pt-1">
+<span class="font-code-pill text-[9px] text-tertiary font-bold tracking-wider">PEAK</span>
+</div>
+<!-- SVG Line Curve -->
+<svg class="w-full h-16 overflow-visible" preserveaspectratio="none" viewbox="0 0 300 60">
+<defs>
+<lineargradient id="curveGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#4cd7f6" stop-opacity="0.4"></stop>
+<stop offset="100%" stop-color="#4cd7f6" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Gradient fill -->
+<path d="M 0,45 Q 30,50 60,42 T 120,35 T 180,10 T 240,16 T 300,38 L 300,60 L 0,60 Z" fill="url(#curveGradient)"></path>
+<!-- Smooth Trend Line -->
+<path d="M 0,45 Q 30,50 60,42 T 120,35 T 180,10 T 240,16 T 300,38" fill="none" stroke="#4cd7f6" stroke-width="2.5"></path>
+<!-- Peak marker dot at (180, 10) -->
+<circle class="fill-tertiary" cx="180" cy="10" r="3.5"></circle>
+<circle class="stroke-tertiary fill-none animate-ping opacity-75" cx="180" cy="10" r="7"></circle>
+</svg>
+<!-- Timeline axis ticks -->
+<div class="flex justify-between items-center text-outline font-telemetry-data text-[10px] pt-1 z-10">
+<span>00:00</span>
+<span>06:00</span>
+<span>12:00</span>
+<span class="text-tertiary font-semibold">16:00</span>
+<span>20:00</span>
+<span>23:59</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Aircraft Category Mix -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-md gap-space-sm mb-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">pie_chart</span>
+<span class="font-headline-md text-headline-md text-on-surface uppercase">AIRCRAFT CATEGORY MIX</span>
+</div>
+<span class="font-code-pill text-code-pill text-on-surface-variant">AIRFRAME TYPES</span>
+</div>
+<!-- Segmented Visual Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden flex gap-0.5">
+<div class="h-full bg-primary rounded-l-full transition-all" style="width: 58%;" title="Commercial Heavy 58%"></div>
+<div class="h-full bg-secondary transition-all" style="width: 34%;" title="Narrow-body 34%"></div>
+<div class="h-full bg-tertiary rounded-r-full transition-all" style="width: 8%;" title="Regional &amp; Biz 8%"></div>
+</div>
+<!-- Category Detail Rows -->
+<div class="flex flex-col gap-space-xs pt-space-xxs">
+<!-- Heavy -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[18px]">flight</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Commercial Heavy</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline truncate">B777, A350, B787, A380</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-metric-display text-[18px] text-primary">58%</span>
+<span class="font-code-pill text-code-pill text-outline">4,884 AC</span>
+</div>
+</div>
+<!-- Narrow-body -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-secondary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">airlines</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Narrow-body Commercial</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline truncate">A320 Family, B737 MAX, A220</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-metric-display text-[18px] text-secondary">34%</span>
+<span class="font-code-pill text-code-pill text-outline">2,863 AC</span>
+</div>
+</div>
+<!-- Regional & Business -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded bg-tertiary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[18px]">connecting_airports</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Regional &amp; Business Jets</span>
+</div>
+<span class="font-telemetry-data text-telemetry-data text-outline truncate">E195, CRJ900, Gulfstream G650</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0">
+<span class="font-metric-display text-[18px] text-tertiary">8%</span>
+<span class="font-code-pill text-code-pill text-outline">674 AC</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Dispatch Ticker Footer -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-high/60 shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px]">sensors</span>
+<span class="font-telemetry-data text-telemetry-data text-on-surface-variant">ADS-B RECEPTOR MATRIX: <span class="text-tertiary font-bold">OPTIMAL</span></span>
+</div>
+<span class="font-code-pill text-code-pill text-outline">LATENCY: 42ms</span>
+</div>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)]" data-active-classes="text-primary bg-surface-container/60"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xxs min-w-[64px] h-12 rounded text-on-surface-variant hover:text-on-surface transition-all" data-path="map-tracker" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-code-pill text-code-pill">MAP</span></a><a class="flex flex-col items-center justify-center gap-space-xxs min-w-[64px] h-12 rounded text-on-surface-variant hover:text-on-surface transition-all" data-path="flight-registry" href="#"><span class="material-symbols-outlined text-[22px]">flight_takeoff</span><span class="font-code-pill text-code-pill">FLIGHTS</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xxs min-w-[64px] h-12 rounded transition-all text-primary bg-surface-container/60" data-path="fleet-analytics" href="#"><span class="material-symbols-outlined text-[22px]">analytics</span><span class="font-code-pill text-code-pill">STATS</span></a><a class="flex flex-col items-center justify-center gap-space-xxs min-w-[64px] h-12 rounded text-on-surface-variant hover:text-on-surface transition-all" data-path="tactical-alerts" href="#"><span class="material-symbols-outlined text-[22px]">notifications_active</span><span class="font-code-pill text-code-pill">ALERTS</span></a></div></nav></body></html>
