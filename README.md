@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="screenshots/banner-animated.gif" alt="SKYTRACK — live aviation intelligence" width="820" />
+  <img
+    src="screenshots/banner-animated.gif"
+    alt="SKYTRACK — live aviation intelligence"
+    width="820"
+  />
 </p>
 
 <h1 align="center">SKYTRACK</h1>
@@ -17,6 +21,7 @@
   <img alt="TS" src="https://img.shields.io/badge/TypeScript-strict-4cd7f6" />
   <img alt="License" src="https://img.shields.io/badge/license-MIT-52e87c" />
 </p>
+
 
 ---
 
