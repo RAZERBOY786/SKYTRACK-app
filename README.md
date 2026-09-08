@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="screenshots/logo.png" alt="SKYTRACK" width="320" />
+  <img src="screenshots/banner-animated.gif" alt="SKYTRACK — live aviation intelligence" width="820" />
 </p>
 
 <h1 align="center">SKYTRACK</h1>
